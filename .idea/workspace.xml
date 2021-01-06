@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="KarenProtect" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="960ab502-f661-4b35-ae0d-32d8a3a39679" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="karenprotect/invalid/Minecraft" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectId" id="1RHYXAoS6c0Oya5JFzZTQdRULqk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="karenprotect" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="history&#9;ACTION&#9;LocalHistory.ShowHistory" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551020115821" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.1640625" />
+    <property name="project.structure.side.proportion" value="0.3988304" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="960ab502-f661-4b35-ae0d-32d8a3a39679" name="Default Changelist" comment="" />
+      <created>1538741631508</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538741631508</updated>
+      <workItem from="1538741632766" duration="981000" />
+      <workItem from="1538837324335" duration="11000" />
+      <workItem from="1538967514196" duration="826000" />
+      <workItem from="1538968358629" duration="18000" />
+      <workItem from="1539338049969" duration="15851000" />
+      <workItem from="1539358924232" duration="8000" />
+      <workItem from="1539361443778" duration="2370000" />
+      <workItem from="1539435172509" duration="88000" />
+      <workItem from="1539435278974" duration="403000" />
+      <workItem from="1539435869207" duration="9966000" />
+      <workItem from="1539453665945" duration="3014000" />
+      <workItem from="1539457017966" duration="7374000" />
+      <workItem from="1539504505155" duration="47000" />
+      <workItem from="1539504936186" duration="5000" />
+      <workItem from="1539505193528" duration="13000" />
+      <workItem from="1539680980866" duration="1312000" />
+      <workItem from="1539835876999" duration="963000" />
+      <workItem from="1539979899355" duration="5778000" />
+      <workItem from="1540029199039" duration="3663000" />
+      <workItem from="1540034199180" duration="16000" />
+      <workItem from="1540044731911" duration="4155000" />
+      <workItem from="1540137793885" duration="303000" />
+      <workItem from="1540230341664" duration="579000" />
+      <workItem from="1540240615013" duration="4000" />
+      <workItem from="1540309564244" duration="6438000" />
+      <workItem from="1540381793567" duration="10056000" />
+      <workItem from="1540392256464" duration="829000" />
+      <workItem from="1540404117032" duration="596000" />
+      <workItem from="1540448061510" duration="41000" />
+      <workItem from="1541743640253" duration="24620000" />
+      <workItem from="1542125167315" duration="58000" />
+      <workItem from="1543141871238" duration="37000" />
+      <workItem from="1544348974791" duration="844000" />
+      <workItem from="1544349886070" duration="85000" />
+      <workItem from="1544350008362" duration="4218000" />
+      <workItem from="1544354292223" duration="1780000" />
+      <workItem from="1545985587069" duration="2594000" />
+      <workItem from="1546266837830" duration="42000" />
+      <workItem from="1548856434950" duration="53000" />
+      <workItem from="1550387784951" duration="55000" />
+      <workItem from="1550388232128" duration="3114000" />
+      <workItem from="1550392117496" duration="9052000" />
+      <workItem from="1550565098477" duration="5533000" />
+      <workItem from="1550573526227" duration="340000" />
+      <workItem from="1550672579290" duration="5570000" />
+      <workItem from="1550824236754" duration="2409000" />
+      <workItem from="1550853932707" duration="77000" />
+      <workItem from="1551019639007" duration="1073000" />
+      <workItem from="1555230556157" duration="293000" />
+      <workItem from="1555237293632" duration="49000" />
+      <workItem from="1557168167609" duration="468000" />
+      <workItem from="1557237676227" duration="190000" />
+      <workItem from="1557243026467" duration="76000" />
+      <workItem from="1557245523445" duration="6000" />
+      <workItem from="1559453994846" duration="99000" />
+      <workItem from="1559454183414" duration="1941000" />
+      <workItem from="1559813351505" duration="545000" />
+      <workItem from="1559899840529" duration="636000" />
+      <workItem from="1559905321555" duration="50000" />
+      <workItem from="1560002439447" duration="228000" />
+      <workItem from="1560589210605" duration="607000" />
+      <workItem from="1560599037795" duration="683000" />
+      <workItem from="1569325528745" duration="540000" />
+      <workItem from="1569740377334" duration="1547000" />
+      <workItem from="1569746237888" duration="725000" />
+      <workItem from="1569819384194" duration="35000" />
+      <workItem from="1571897738652" duration="623000" />
+      <workItem from="1571905719382" duration="12000" />
+      <workItem from="1575204269025" duration="655000" />
+      <workItem from="1575819015985" duration="130000" />
+      <workItem from="1584788998275" duration="44000" />
+      <workItem from="1585672610368" duration="1097000" />
+      <workItem from="1585674702417" duration="613000" />
+      <workItem from="1586896236262" duration="1305000" />
+      <workItem from="1587249056156" duration="17000" />
+      <workItem from="1588538705879" duration="574000" />
+      <workItem from="1589540605762" duration="8440000" />
+      <workItem from="1589698577576" duration="8926000" />
+      <workItem from="1589806554213" duration="7000" />
+      <workItem from="1589854096929" duration="1248000" />
+      <workItem from="1589870001306" duration="1648000" />
+      <workItem from="1589889689645" duration="1008000" />
+      <workItem from="1593530971684" duration="88000" />
+      <workItem from="1594498051410" duration="63000" />
+      <workItem from="1609924422082" duration="31000" />
+      <workItem from="1609924594790" duration="206000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="666" y="266" key="FileChooserDialogImpl" timestamp="1588539278932">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="666" y="266" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1080@0.0.1920.1050" timestamp="1588539278932" />
+    <state x="440" y="99" key="SettingsEditor" timestamp="1594498057582">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="440" y="99" key="SettingsEditor/0.0.1920.1050/1920.-476.1080.1890@0.0.1920.1050" timestamp="1594498057582" />
+    <state x="440" y="99" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1080@0.0.1920.1050" timestamp="1588539274726" />
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1589560218387">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589560218387" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&quot;§lKarenProtect §6§lNormal §b§lBlock §913§7x§914§7x§915&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;§f§lKarenProtect §6§lNormal §b§lBlock §913§7x§914§7x§915&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+</project>

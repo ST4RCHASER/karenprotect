@@ -1,0 +1,240 @@
+karen: 6
+# ^ อย่าไปแตะมัน
+
+manual_wg_change: 0
+#WorldGuard API มีการเปลี่ยนอยู่หลายๆเวอร์ชั่น
+#หาก KarenProtect ไม่สามารถตวรจหา worldguard ได้
+#ให้ลอง ปรับเลขให้ตรงกับเวอร์ชั่น worldguard กับที่ใช้อยู่ครับ
+# 0 Disable (ค้นหาอันโนมัติ) (Default)
+# 1 Worldguard 6.0 - 6.1
+# 2 Worldguard 6.2
+# 3 Worldguard 7
+
+############################
+# KarenProtect Config file #
+#    โดย _StarChaser <3     #
+#    แปล <ใส่ชื่อคนแปลด้วยจ้า>       #
+#    การแปลอาจจะไม่ถูกต้อง 100%     #
+#    แปลพลาดตรงไหนสามารถแจ้งได้นะครับ  #
+############################
+
+#Translation messages
+messages:
+  plugin_prefix: '&7KarenProtect: '
+  reload: '&aรีโหลด KarenProtect เรียบร้อยแล้ว!'
+  block_limit: '&cคุณไม่สามารถวางโพรเทคเพิ่มได้อีกแล้ว!'
+  overlaps: '&cคุณไม่สามารถโพรเทคบริเวณนี้ได้เนื่องจากจะไปทับกับพื้นที่ที่คุณไม่ได้เป็นเจ้าของ'
+  place_first: '&cโปรดวางโพรเทคก่อนจึงจะสามารถ ทุบ/วาง ในโลกนี้ได้'
+  created: '&aสร้างโพรเทคแล้ว!'
+  target_not_online: '&cไม่พบผู้เล่น <player> ออนไลน์อยู่!'
+  deny_protect: '&cคุณไม่สามารถโพรเทคบริเวรนี้ได้!'
+  block_not_found: '&cไม่พบบล๊อครหัส <id> ในฐานข้อมูล'
+  world_disable: '&cSorry! &7KarenProtect ถูกปิดใช้งานในโลกนี้!'
+  block_give: '&aโพรเทค <id> ถูกส่งไปยัง <player>'
+  remove: '&aนำโพรเทคออกเรียบร้อยแล้ว!'
+  remove_nodrop: '&aนำโพรเทคออกเรียบร้อยแล้ว แต่ว่ามีการตั้งค่า nodeop ไว้มันจึงหายไปแล้ว~'
+  require_player: '&cคำสั่งนี้ต้องการชื่อผู้เล่นด้วย'
+  flag_set: '&bตั้งค่า &e<flag> &bเป็น &a<value>&b เรียบร้อยแล้ว'
+  flag_error: '&cเกิดข้อผิดพลาดในการตั่งค่า &e<flag> <value> &cโปรดตรวจสอบคำสั่งและใช้งานใหม่อีกครั้ง!'
+  flag_no_perm: '&cคุณได้ไม่ได้รับอนุญาติให้ใช้คำสั่ง flag &7(&akarenprotect&7.&cflags&7)'
+  flag_flags_no_perm: '&cคุณได้ไม่ได้รับอนุญาติให้ใช้ flag นี้ &7(&akarenprotect&7.&cflag&7.&a<flag_name>&7)'
+  flag_deny: '&cคุณไม่ใช้สามารถใช้คำสั่ง flag ในบริเวณนี้ได้!'
+  flag_help: '&cวิธีการใช้: &f/kp flag <flagname> <flagvalue>'
+  flag_not_found: '&cรหัา Flag "<flag>" ไม่เจอหรือไม่ก็ไม่ถูกเปิดให้ใช้อยู่ &7&o(flag ที่เปิดใช้งาน are use, pvp, greeting, farewell and mob-spawning)'
+  no_perm: '&cคุณไม่มีสิทธ์ที่จะใช้คำสั่งนี้!'
+  priority_set: '&aความสำคัญได้ถูกตั้งเป็น &7<value>&a!'
+  priority_view: '&eความสำคัญ: &f<value>'
+  priority_deny: '&cคุณไม่ใช้สามารถใช้คำสั่ง ความสำคัญ ในบริเวณนี้ได้!'
+  priority_no_perm: '&cคุณได้ไม่ได้รับอนุญาติให้ใช้คำสั่ง ความสำคัญ &7(&akarenprotect&7.&cpriority&7)'
+  owner_deny: '&cคุณไม่ใช้สามารถใช้คำสั่ง เจ้าของ ในบริเวณนี้ได้!'
+  owner_added: '&e<player> &aถูกเพิ่มเข้ามาให้เป็นเจ้าของโพรเทคนี้แล้ว'
+  owner_removed: '&e<player> &aได้ถูกลบจากการเป็นเจ้าของโพรเทคนี้แล้ว'
+  owner_no_perm: '&cคุณได้ไม่ได้รับอนุญาติให้ใช้คำสั่ง เจ้าของ &7(&akarenprotect&7.&cowners&7)'
+  member_deny: '&cคุณไม่ใช้สามารถใช้คำสั่ง สมาชิก ในบริเวณนี้ได้!'
+  member_added: '&e<player> &aได้ถูกลบจากการเป็นสมาชิกโพรเทคนี้แล้ว'
+  member_removed: '&e<player> &aได้ถูกลบจากการเป็นสมาชิกโพรเทคนี้แล้ว'
+  member_no_perm: '&cคุณได้ไม่ได้รับอนุญาติให้ใช้คำสั่ง สมาชิก &7(&akarenprotect&7.&cmembers&7)'
+  protection_take: '&aคุณได้เอาโพรเทคมาจากพิกัศ x: <x> y: <y> z: <z>'
+  protection_take_deny: '&cคุณไม่สามารถใช้คำสั่ง take ในบริเวณนี้ได้!'
+  protection_take_not_found: '&cไม่พบโพรเทคในพิกัศ at x: <x> y: <y> z: <z>, แต่มันได้ถูกนำออกไปแล้ว!'
+  protection_take_no_perm: '&ccคุณได้ไม่ได้รับอนุญาติให้ใช้คำสั่ง take &7(&akarenprotect&7.&ctake&7)'
+  protection_take_nodrop: '&aคุณได้เอาโพรเคทมาจากพิกัศ x: <x> y: <y> z: <z> &cแต่ว่ามีการตั้งค่า nodeop ไว้มันจึงหายไปแล้ว~'
+  give_help: '&cวิธีการใช้: &7/kp give <block_id or block_name> (player)'
+  remove_deny: '&cคุณไม่ใช้เจ้าของโพรเทคนี้ คุณไม่สามารถนำออกไปได้'
+  empty_data: '&f- &aว่างเปล่า &f-'
+  #
+  help:
+  - '&8&l=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-='
+  - '    &e&lKaren &b&lProtect &f&l<version> &7&lคำสั่งช่วยเหลือ'
+  - '&r'
+  - '  &7Developer: &e_StarChaser,kana2011th'
+  - '  &7Worldedit: &e<ver_worldedit>'
+  - '  &7WorldGuard: &e<ver_worldguard>'
+  - '&r'
+  - '  &7ตอนนี้คุณกำลังยืนอยู่ที่โพรเทค รหัส: &a<id>'
+  - '  &7เจ้าของ:&d <owners>'
+  - '  &7สมาชิก:&d <members>'
+  - '  &7ความสำคัญ:&e <priority>'
+  - '  &7ข้อมูล Flag:&d <flags>'
+  - '&8&l*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*'
+  - ' &7/kp,/karenprotect,/ps (help) &f- &aแสดงหน้านี้'
+  - ' &7/kp give <block_id> (player) &f- &aเสกโพรเทค ให้กับตนเองหรือผู้เล่นอื่น'
+  - ' &7/kp flag <flagname> <flagvalue> &f- &aตั้งค่า flag สำหรับ protection'
+  - ' &7/kp add <player> &f- &aเพิ่มสมาชิกเข้าไปในโพรเทค'
+  - ' &7/kp remove <player> &f- &aลบสมาชิกออกจากโพรเทค'
+  - ' &7/kp addowner <player> &f- &aเพิ่มเจ้าของเข้าไปในโพรเทค'
+  - ' &7/kp removeowner <player> &f- &aลบเข้าของออกจากโพรเทค'
+  - ' &7/kp priority <value> &f- &aตั้งค่าความสำคัญ'
+  - '&8&l=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-='
+
+#Flag นี้จะถูกตั้งค่าให้เมื่อวางโพรเทค
+#ราชื่อ Flag : http://wiki.sk89q.com/wiki/WorldGuard/Regions/Flags
+flags:
+- 'greeting &7KarenProtect: &aEntering <player> protect &f"<name>&f" &f(&7<x>&9x&7<y>&9x&7<z>&f)'
+- 'farewell &7KarenProtect: &cLeavening <player> protect &f"<name>&f" &f(&7<x>&9x&7<y>&9x&7<z>&f)'
+- 'pvp deny'
+
+#ลบอัตโนมัติ (เบต้า):
+#ลบโพรเทคออกอัตโนมัติเมื่อผู้เล่นไม่ได้เข้าเป็นเวลานาน (หน่วยเป็น วัน)
+#Default -1 (ปิดใช้งาน)
+auto_remove: -1
+
+#รายชื่อ flag ที่สามารถตั้งค่าได้แบบอิสระโดยเจ้าของโพรเทค
+enable_flags:
+- 'use'
+- 'pvp'
+- 'greeting'
+- 'farewell'
+- 'mob-spawning'
+
+#ป้องการใช้ลูกสูบดันโพรเทค
+piston_protect: true
+
+#เพิ่มชื่อและ lore ให้อัตโนมัติเมื่อมีบล๊อคธรรมดาที่สามารถเป็นโพรเทคได้เข้ามาในกระเป๋าผู้เล่น
+#ถ้าเปิดใช้งาน คุณจะสามารถใช้คำสั่ง /give <ชื่อผู้เล่น> 16 1 เพื่อที่จะเสกโพรเทคให้ได้เหมือนกัน
+#ถ้าเปิดการตั้งค่านี้แล้ว silk_touch_drop_editor แนะนำให้ตั้งค่าด้วย เพื่อป้องกันการปั้มการขุดด้วย silktouch
+auto_change_on_empty_data: false
+
+
+#ป้องกันการวาง น้ำและลาวา นอกโพรเทค
+liquid_protect:
+  enable: false
+  message: '&cโปรดวางโพรเทคก่อน คุณถึงจะสามารถวางน้ำและลาวาได้!'
+
+#ปิดการใช้งาน KarenProtect ในชื่อโลกที่ใส่ไว้
+disable_worlds:
+- no_protection_place_world
+
+#ถ้าคุณยังไม่วางโพรเทคแล้วมีชื่อโลกอยู่ในรายการนี้ คุณจะไม่สามารถวาง/ทุบ บล๊อคอะไรได้เลยทั้งสิ้น
+#คุณจำเป็นต้องวางโพรเทคก่อนจึงจะสามารถ ทุบ/วาง บล๊อคต่างๆได้
+worlds_protect_place_frist:
+- world_need_to_protect
+
+#KarenProtect ใช้ server performance สักระยะเมื่อวางโพเทค
+#ถ้ามีผู้เล่นใช้ hack-client และทำการวางรัว
+#มันสามารถทำให้เซิร์ฟเวอร์ของคุณค้างได้
+#คุณสามารถตั้งค่า delay เมื่อผู้เล่นวางโพรเทคได้
+blockplacecooldown:
+  enable: false
+  time: 30
+  message: '&aโปรดรออีก <time> วินาที แล้วจึงค่อยวางโพรเทคใหม่อีกครั้ง'
+
+
+#Silk Touch Drop Editor
+#คุณสามารถตั้งเมื่อผู้เล่นเมื่อใช้ enchant silk touch ขุดคุณสามารถเปลี่ยนให้เป็นอย่างอื่นได้
+#(อย่างเช่นเปลี่ยนจาก Coal_ore เป็น Coal)
+silk_touch_drop_editor:
+  COAL_ORE:
+    enable: false
+    to:
+      item: COAL
+      amount: 1
+  LAPIS_ORE:
+    enable: true
+    to:
+      #1.13.1 Item: LAPIS_LAZULI data: 0
+      #1.8 Item: DYE data: 1
+      item: DYE
+      amount: 1
+      data: 1
+  DIAMOND_ORE:
+    enable: false
+    to:
+      item: IRON_INGOT
+      amount: 3
+      data: 0
+      name: "&7&lSuper Iron Ingot"
+      lore:
+      - "This is Super Iron Ingot"
+      - "Form &b&lKarenProtect"
+      enchant:
+        DAMAGE_ALL: 5
+        SILK_TOUCH: 1
+
+
+#ตั้งค่าโพรเทค
+# รหัสบล๊อค > COAL_ORE:
+# x y z < ขนาด // ถ้าต้องการแบบสุง bedrock จนถึงท้องฟ้าให้ใส่ 256
+blocks:
+  COAL_ORE:
+    #ชื่อโพรเทค
+    name: '&a&lMember &b&lBlock'
+    #ขนาดโพรเทค
+    size:
+      x: 10
+      y: 11
+      z: 12
+    block_infomation:
+      #ชื่อเมื่อถือโพรเทค
+      displayname: "&f&lKarenProtect <name> &9<x>&7x&9<y>&7x&9<z>"
+      lore:
+      #ข้อมูลโพรเทค
+      - '&7ขนาด:&a <x>x<y>x<z>'
+      - '&r'
+      - '&lคำเตือน: &7โพรเทคต้องมีชื่อเท่านั้นจึงจะสามารถใช้งานได้'
+    #กิจกรรม เมื่อผู้เล่นทำอย่างไรอย่างนึงกับโพรเทคเช่นวาง หรือ ทุบ หรือ เข้ามาในโซนโพรเทค
+    #ก็จะทำตามที่วางสริปไว้
+    events:
+      #เมื่อผู้เล่นวางโพรเทคนี้
+      on_place:
+      #รันคำสั่งแบบ console โดนใช้คำสั่ง /say และ /money take
+      - 'console; say &aPlayer &b<player> &abreaking <name> &aprotection &ablock!'
+      - 'console; money take <player> 10'
+      #เมื่แผู้เล่นทุบโพรเทคนี้
+      on_distory:
+      #รันคำสั่งแบบ console โดนใช้คำสั่ง /say และ /money take และใช้คำสั่งแบบ player ให้ /me
+      - 'console; say &cPlayer &b<player> &cbreaking <name> &cprotection &cblock!'
+      - 'console; money give <player> 10'
+      - 'player; me destroying protection...'
+      #NODROP: เมื่อผู้เล่นทุบโพรเทคจะไม่ได้รับคืน (ใช้ครั้งเดียว)
+      - 'nodrop; true'
+  DIAMOND_ORE:
+    name: '&6&lJail &b&lBlock'
+    size:
+      x: 13
+      y: 14
+      z: 15
+    block_infomation:
+      displayname: "&f&lKarenProtect <name> &9<x>&7x&9<y>&7x&9<z>"
+      lore:
+      - '&cเมื่อวางแล้วผู้เล่นจะไม่สามารถออกจากโซนนี้ได้อีก เย้ๆ~'
+      - '&7Size:&a <x>x<y>x<z>'
+    events:
+      on_entry:
+      - 'text; &cคุณติตกับดักแล้ว ฮ่าๆ!'
+      on_leave:
+      - 'text; &cคุณไม่สามารถรถออกไปจากที่นี้ได้ จำเป็นต้องทุบโพรเทคก่อน'
+      #ยกเลิก on leave event (ผู้เล่นจะเด้งกลับมาในโพ)
+      - 'cancel; true'
+  EMERAID_ORE:
+    name: '&6&lNormal &b&lBlock'
+    size:
+      x: 13
+      y: 14
+      z: 15
+    block_infomation:
+      displayname: "&f&lKarenProtect <name> &9<x>&7x&9<y>&7x&9<z>"
+      lore:
+      - '&f&lThis is Emeraid block'
+      - '&aโพรเทคปกติที่ไม่ได้ใส่กิจกรรมอะไรเลย'
+      - '&7Size:&a <x>x<y>x<z>'

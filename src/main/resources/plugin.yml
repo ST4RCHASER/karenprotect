@@ -1,0 +1,13 @@
+name: KarenProtect
+version: 1.6.0 debug
+description: a simple plugin
+authors: [_StarChaser,kana2011th]
+
+depend: [WorldGuard, WorldEdit]
+main: me.starchaser.karenprotect.colorystarry
+
+commands:
+  karenprotect:
+    description: Main commands
+    aliases: [ps, kp]
+    usage: /karenprotect help
