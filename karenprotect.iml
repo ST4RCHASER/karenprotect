@@ -29,6 +29,8 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="worldguard-bukkit-7.0.2" level="project" />
+    <orderEntry type="library" name="depends" level="project" />
+    <orderEntry type="library" name="worldedit-bukkit-7.0.0-beta-02" level="project" />
+    <orderEntry type="library" name="worldedit-bukkit-6.1.7.2" level="project" />
   </component>
 </module>

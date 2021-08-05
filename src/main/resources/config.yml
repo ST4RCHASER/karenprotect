@@ -140,6 +140,8 @@ enable_flags:
 
 #Preventing protect block from getting move by pistion
 piston_protect: true
+#Preventing block damage by creeper or TNT
+explosion_protect: true
 
 #Automatic add name and lore when the player gets protection block in their inventory.
 #If you enable this, You can use default Minecraft give command to get a protection block. (Example:/give <playername> 16 1)

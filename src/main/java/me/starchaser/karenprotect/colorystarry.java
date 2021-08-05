@@ -405,8 +405,8 @@ public class colorystarry extends JavaPlugin {
         ArrayList<String> lorelist = getBlocksKP(id).getBlock_lore();
         im.setLore(lorelist);
         is.setItemMeta(im);
-        if (player.getInventory().firstEmpty() == -1) {
-            player.getWorld().dropItem(block_loc, is);
+        if (player == null || player.getInventory().firstEmpty() == -1) {
+            block_loc.getWorld().dropItem(block_loc, is);
         } else {
             player.getInventory().addItem(is);
         }
@@ -507,8 +507,13 @@ public class colorystarry extends JavaPlugin {
                         double kry = Double.parseDouble(currentID.substring(indexX + 1, indexY));
                         double krz = Double.parseDouble(currentID.substring(indexY + 1, indexZ));
                         if (pb == null) {
-                            Location psLocation = new Location(p.getWorld(), krx, kry, krz);
-                            tempToKP = p.getLocation().distance(psLocation);
+                            if (p == null) {
+                                Location psLocation = new Location(pb.getWorld(), krx, kry, krz);
+                                tempToKP = pb.getLocation().distance(psLocation);
+                            }else {
+                                Location psLocation = new Location(p.getWorld(), krx, kry, krz);
+                                tempToKP = p.getLocation().distance(psLocation);
+                            }
                         }else {
                             Location psLocation = new Location(pb.getWorld(), krx, kry, krz);
                             tempToKP = pb.getLocation().distance(psLocation);

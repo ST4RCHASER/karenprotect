@@ -10,8 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="960ab502-f661-4b35-ae0d-32d8a3a39679" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/depends.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/worldedit_bukkit_7_0_0_beta_02.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/worldguard_bukkit_7_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/worldedit_bukkit_6_1_7_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/karenprotect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/karenprotect.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/starchaser/karenprotect/colorystarry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/starchaser/karenprotect/colorystarry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/starchaser/karenprotect/evt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/starchaser/karenprotect/evt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +34,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -53,7 +68,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551020115821" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../all_jars/worldedit-bukkit-6.1.7.2.jar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,13 +76,26 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.1640625" />
     <property name="project.structure.side.proportion" value="0.3988304" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -179,6 +207,10 @@
       <workItem from="1594498051410" duration="63000" />
       <workItem from="1609924422082" duration="31000" />
       <workItem from="1609924594790" duration="206000" />
+      <workItem from="1622637089752" duration="989000" />
+      <workItem from="1622991566824" duration="272000" />
+      <workItem from="1628190890989" duration="504000" />
+      <workItem from="1628191408866" duration="13439000" />
     </task>
     <servers />
   </component>
@@ -219,21 +251,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="666" y="266" key="FileChooserDialogImpl" timestamp="1588539278932">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="666" y="266" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1080@0.0.1920.1050" timestamp="1588539278932" />
-    <state x="440" y="99" key="SettingsEditor" timestamp="1594498057582">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="440" y="99" key="SettingsEditor/0.0.1920.1050/1920.-476.1080.1890@0.0.1920.1050" timestamp="1594498057582" />
-    <state x="440" y="99" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1080@0.0.1920.1050" timestamp="1588539274726" />
-    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1589560218387">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1589560218387" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="setValue">

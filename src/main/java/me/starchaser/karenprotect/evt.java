@@ -372,20 +372,55 @@ public class evt implements Listener {
 
     @EventHandler
     public void onEntityExplode(EntityExplodeEvent evt) {
+        boolean enabled = colorystarry.conffetibox.getConfig().getBoolean("explosion_protect");
+//        Bukkit.broadcastMessage("§7KP Debugger: §eTNT protect enable: §a" + enabled);
         RegionManager rgm = wrapper.getRegionManager(evt.getLocation().getWorld());
         Block block = evt.getLocation().getBlock();
         Location loc = getKPProtectedLocection(colorystarry.getRGN(rgm, block, getID_List(evt.getLocation().getX(), evt.getLocation().getY(), evt.getLocation().getZ(), rgm), null), block.getWorld());
-        if (loc != null) {
-            ArrayList<Block> newList = new ArrayList<>();
-            for (Block block2 : evt.blockList()) {
-                if (colorystarry.getBlocksKP(block2.getType().toString()) != null) {
-                    if (!block2.getLocation().equals(loc)) {
+        ArrayList<Block> newList = new ArrayList<>();
+        List<Block> blockList = evt.blockList();
+        for (Block block2 : blockList) {
+            KPBlock blockkp = colorystarry.getBlocksKP(block2.getType().toString());
+            if (blockkp != null) {
+//                Bukkit.broadcastMessage("§7KP Debugger: §din a rules");
+                Location loc2 = getKPProtectedLocection(colorystarry.getRGN(rgm, block, getID_List(block2.getX(), block2.getY(), block2.getZ(), rgm), null), block.getWorld());
+//                if (loc == null) {
+//                    Bukkit.broadcastMessage("§7KP Debugger: §btarget -> §cNULL");
+//                } else {
+//                    Bukkit.broadcastMessage("§7KP Debugger: §btarget -> " + loc.getX() + " - " + loc.getY() + " - " + loc.getZ());
+//                }
+//                if (loc2 == null) {
+//                    Bukkit.broadcastMessage("§7KP Debugger: §btarget 2 -> §cNULL");
+//                } else {
+//                    Bukkit.broadcastMessage("§7KP Debugger: §etarget 2 -> " + loc2.getX() + " - " + loc2.getY() + " - " + loc2.getZ());
+//                }
+//                if (block2 == null) {
+//                    Bukkit.broadcastMessage("§7KP Debugger: §dtarget damage -> §cNULL");
+//                } else {
+//                    Bukkit.broadcastMessage("§7KP Debugger: §dtarget damage -> " + block2.getX() + " - " + block2.getY() + " - " + block2.getZ());
+//                }
+                if (!block2.getLocation().equals(loc) && !block2.getLocation().equals(loc2)) {
+//                    Bukkit.broadcastMessage("§7KP Debugger: §adamage added!");
+                    newList.add(block2);
+                }else {
+                    if (!enabled && blockkp != null) {
+                        String id = colorystarry.getRGN(rgm, block, getID_List(block2.getX(), block2.getY(), block2.getZ(), rgm), null);
+                        if (!blockkp.is_nodrop()) {
+                            colorystarry.give_block(block2.getType().toString(), null, block2.getLocation());
+                        }
+                        loc2.getBlock().setType(Material.AIR);
+                        rgm.removeRegion(id);
+//                        Bukkit.broadcastMessage("§7KP Debugger: §cRegion id removed: " + id);
                         newList.add(block2);
                     }
                 }
+
+            } else {
+//                Bukkit.broadcastMessage("§7KP Debugger: §fdamage added! (not in rules)");
+                newList.add(block2);
             }
-            evt.blockList().clear();
-            evt.blockList().addAll(newList);
         }
+        evt.blockList().clear();
+        evt.blockList().addAll(newList);
     }
 }
